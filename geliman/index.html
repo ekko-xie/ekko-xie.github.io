@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="">
+    <title>歌利曼</title>
+    <link rel="stylesheet" href="css/idangerous.swiper.css"/>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/css-reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/idangerous.swiper.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/PicCarousel.js"></script>
+    <script src="js/basic.js"></script>
+
+
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/selectivizr-min.js"></script><![endif]-->
+
+
+</head>
+<body>
+
+<!--头部，首页头部和内页不同-->
+<div class="index-header"></div>
+
+<!--banner-->
+<div class="index-banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                 style="background: url('images/index-banner1.jpg') no-repeat center center;background-size: cover;">
+                <a href="#"></a>
+            </div>
+            <div class="swiper-slide"
+                 style="background: url('images/index-banner1.jpg') no-repeat center center;background-size: cover;">
+                <a href="#"></a>
+            </div>
+            <div class="swiper-slide"
+                 style="background: url('images/index-banner1.jpg') no-repeat center center;background-size: cover;">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+</div>
+
+<div class="index-about anim anim1">
+    <div class="wrap">
+        <div class="ia-content clearfix">
+            <div class="ia-box">
+                <a href="about-brand.html">
+                    <div class="ia-box-dark">
+                        <span class="ia-eye"></span>
+                        <p>Learn more</p>
+                    </div>
+                    <div class="ia-box-con">
+                        <img width="380" height="240" src="images/ia1.jpg" alt="">
+                        <p>Brand introduction</p>
+                    </div>
+                </a>
+            </div>
+            <div class="ia-box">
+                <a href="factory.html">
+                    <div class="ia-box-dark">
+                        <span class="ia-eye"></span>
+                        <p>Learn more</p>
+                    </div>
+                    <div class="ia-box-con">
+                        <img width="380" height="240" src="images/ia2.jpg" alt="">
+                        <p>Our factory</p>
+                    </div>
+                </a>
+            </div>
+            <div class="ia-box">
+                <a href="about-news.html">
+                    <div class="ia-box-dark">
+                        <span class="ia-eye"></span>
+                        <p>Learn more</p>
+                    </div>
+                    <div class="ia-box-con">
+                        <img width="380" height="240" src="images/ia3.jpg" alt="">
+                        <p>Company news</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="index-news">
+    <div class="wrap">
+        <div class="index-news-title anim anim1">
+            <div class="inet-line"></div>
+            <span>WHAT'S NEW AT GLEEMAN</span>
+        </div>
+        <div class="in-content clearfix anim anim2">
+            <div class="inc-left">
+                <div class="inc-box">
+                    <a href="about-news-detail.html">
+                        <div class="inc-box-dark">
+                            <p><span>Learn more</span></p>
+                        </div>
+                        <div class="inc-box-img">
+                            <img width="590" height="480" src="images/in-left1.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="inc-box">
+                    <a href="about-news-detail.html">
+                        <div class="inc-box-dark">
+                            <p><span>Learn more</span></p>
+                        </div>
+                        <div class="inc-box-img">
+                            <img width="590" height="300" src="images/in-left2.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inc-right">
+                <div class="inc-box">
+                    <a href="about-news-detail.html">
+                        <div class="inc-box-dark">
+                            <p><span>Learn more</span></p>
+                        </div>
+                        <div class="inc-box-img">
+                            <img width="590" height="300" src="images/in-right1.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="inc-box">
+                    <a href="about-news-detail.html">
+                        <div class="inc-box-dark">
+                            <p><span>Learn more</span></p>
+                        </div>
+                        <div class="inc-box-img">
+                            <img width="590" height="480" src="images/in-right2.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--底部-->
+<footer></footer>
+
+
+<script>
+    $(function () {
+
+        //banner高度自适应一屏
+        var h = $(window).height() - 36;
+        $('.index-banner .swiper-container').height(h);
+
+        $(window).resize(function () {
+            var h = $(window).height() - 36;
+            $('.index-banner .swiper-container').height(h);
+        });
+
+        //banner
+        var mySwiper1 = new Swiper('.index-banner .swiper-container', {
+            loop: true,
+            speed: 1000,
+            autoplay: 5000,
+            pagination: '.index-banner .pagination',
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false
+            //其他设置
+        });
+
+
+        //滚动监控添加动画
+        var anim = $(".anim");//触发遍历所用的类
+        setTimeout(function(){
+            $(window).scroll(function() {
+                roll();
+            });
+            $(window).resize(function() {
+                roll();
+            });
+            roll();
+        },6);
+        function roll() {
+            var oHeight = $(window).height();
+            var ScrVal = $(window).scrollTop();
+            anim.each(function(i) {
+                if (ScrVal + oHeight > anim.eq(i).offset().top - 50 ){
+                    anim.eq(i).addClass("anim-show");
+                }
+            })
+        }
+
+    })
+
+
+</script>
+
+
+</body>
+</html>
+

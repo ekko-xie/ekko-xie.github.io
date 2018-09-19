@@ -1,0 +1,190 @@
+<div class="header-top">
+    <div class="wrap clearfix">
+        <div class="lang-box clearfix">
+            <div class="lang-icon">
+                <img width="24" height="17" src="images/lang.jpg" alt="">
+            </div>
+            <!--多选跳转-->
+            <select class="lang-select" name="" id="" onchange="select_jump('parent',this,0)">
+                <option value="#">English</option>
+                <option value="index.html">中文</option>
+            </select>
+        </div>
+        <div class="header-line"></div>
+        <div class="header-cart">
+            <a href="#"></a>
+        </div>
+
+        <!--搜索-->
+        <div class="search-content">
+            <div class="search-btn"></div>
+            <div class="search-box">
+                <div class="search-box-i">
+                    <form action="">
+                        <input class="search-input" placeholder="Search" type="text">
+                        <input class="search-submit" type="submit" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-bp">Brands</div>
+    </div>
+</div>
+
+<div class="header-nav index-header-nav">
+    <div class="wrap clearfix">
+        <div class="logo">
+            <a href="index.html"><img width="162" height="50" src="images/logo.png" alt=""></a>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-ul">
+                <li class="nav-list">
+                    <a class="nav-a" href="product.html">Headphones</a>
+                    <div class="nav-dropdown nav-dropdown1">
+                        <div class="wrap">
+                            <div class="nd-container clearfix">
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro1.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro2.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro3.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro4.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro5.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-a" href="product.html">Speakers</a>
+                    <div class="nav-dropdown nav-dropdown1">
+                        <div class="wrap">
+                            <div class="nd-container clearfix">
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro1.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro2.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro3.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                                <div class="nd-box">
+                                    <a href="product-detail.html">
+                                        <img width="110" height="110" src="images/hpro4.jpg" alt="">
+                                        <p>H700</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-list" style="position: relative;">
+                    <a class="nav-a" href="about.html">About</a>
+                    <div class="nav-dropdown nav-dropdown2">
+                        <div class="nd2-menu">
+                            <p><a href="about.html">Our Company</a></p>
+                            <p><a href="about-brand.html">Brand introduction</a></p>
+                            <p><a href="about-news.html">Company news</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-list" style="position: relative;">
+                    <a class="nav-a" href="service.html">Service</a>
+                    <div class="nav-dropdown nav-dropdown2">
+                        <div class="nd2-menu">
+                            <p><a href="service.html">OEM/ODM</a></p>
+                            <p><a href="service-design.html">Design</a></p>
+                            <p><a href="service-manufacture.html">Manufacture</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-a" href="contact.html">Contact us</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+    $(function () {
+        // 导航下拉
+        $('.nav-list').mouseenter(function () {
+            $('.nav-dropdown').hide();
+            $(this).find('.nav-dropdown').stop().slideDown();
+        }).mouseleave(function () {
+            $('.nav-dropdown').hide();
+        });
+
+        //搜索框
+        $('.search-btn').click(function (e) {
+            if($('.search-box').hasClass('on')){
+                $('.search-box').removeClass('on');
+            }else{
+                $('.search-box').addClass('on');
+                $(document).one("click", function(){
+                    $('.search-box').removeClass('on');
+                });
+                e.stopPropagation();
+            }
+        });
+        $('.search-box').on("click", function(e) {
+            e.stopPropagation();
+        });
+
+        //监听滚动
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $('.header-nav').addClass('nav-scroll');
+            } else {
+                $('.header-nav').removeClass('nav-scroll');
+            }
+        })
+
+    });
+
+    //多选跳转
+    function select_jump(targ, selObj, restore) { //v3.0
+        eval(targ + ".location='" + selObj.options[selObj.selectedIndex].value + "'");
+        if (restore) selObj.selectedIndex = 0;
+    }
+
+</script>
