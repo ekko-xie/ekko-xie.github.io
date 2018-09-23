@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="author" content="">
+  <title>产品详情</title>
+  <link rel="stylesheet" href="css/idangerous.swiper.css"/>
+  <link rel="stylesheet" href="css/css-reset.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/idangerous.swiper.min.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.js"></script>
+  <script src="js/basic.js"></script>
+
+
+  <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/selectivizr-min.js"></script><![endif]-->
+
+
+</head>
+<body>
+
+<!--弹窗-->
+<div class="pd-dark">
+  <div class="pd-dark-bg"></div>
+  <div class="pdd-content">
+    <div class="pdd-close">×</div>
+    <img width="630" height="328" src="images/pdd-dark-img.jpg" alt="">
+  </div>
+</div>
+
+
+<!--内页头部，和首页不一样-->
+<header></header>
+
+<div class="inner-banner" style="background: url('images/product-banner.jpg') no-repeat center center / cover;"></div>
+
+
+<div class="product-detail">
+  <div class="wrap">
+    <div class="product-info clearfix">
+
+      <div class="product-info-pic">
+        <!--大图-->
+        <div class="pi-big">
+          <div class="pi-big-img">
+            <img width="540" height="540" src="images/product1.jpg" alt="">
+          </div>
+          <div class="pi-big-img">
+            <img width="540" height="540" src="images/product2.jpg" alt="">
+          </div>
+          <div class="pi-big-img">
+            <img width="540" height="540" src="images/product1.jpg" alt="">
+          </div>
+          <div class="pi-big-img">
+            <img width="540" height="540" src="images/product2.jpg" alt="">
+          </div>
+          <div class="pi-big-img">
+            <img width="540" height="540" src="images/product1.jpg" alt="">
+          </div>
+          <div class="pi-big-img">
+            <img width="540" height="540" src="images/product2.jpg" alt="">
+          </div>
+        </div>
+        <!--缩略图-->
+        <div class="pi-small">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pi-small-img">
+                  <img src="images/product1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pi-small-img">
+                  <img src="images/product2.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pi-small-img">
+                  <img src="images/product1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pi-small-img">
+                  <img src="images/product2.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pi-small-img">
+                  <img src="images/product1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pi-small-img">
+                  <img src="images/product2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pi-pag">
+            <span class="pi-pag-btn pi-pag-prev"></span>
+            <span class="pi-pag-btn pi-pag-next"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-dec">
+        <div class="product-dec-title">
+          <h3>鲜肉天然幼犬粮</h3>
+          <p>Fresh meat and natural young dog food</p>
+        </div>
+        <div class="product-price">
+          <div class="pp-latest">
+            ￥ <span>23.00元</span>
+          </div>
+          <div class="pp-old">
+            市场价：<span>￥28</span>
+          </div>
+        </div>
+
+        <div class="product-size clearfix">
+          <div class="product-size-p">尺码：</div>
+          <div class="product-size-num clearfix">
+            <a class="on" href="#">XL</a>
+            <a href="#">L</a>
+            <a href="#">M</a>
+            <a href="#">S</a>
+            <a href="#">XS</a>
+          </div>
+        </div>
+
+        <div class="product-btn">
+          <a class="product-btn-buy" href="javascript:;">立刻购买</a>
+          <a class="product-btn-consult" href="#">在线咨询</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="product-presentation">
+    <img src="images/pres1.jpg" alt="">
+    <img src="images/pres2.jpg" alt="">
+    <img src="images/pres3.jpg" alt="">
+    <img src="images/pres4.jpg" alt="">
+    <img src="images/pres5.jpg" alt="">
+    <img src="images/pres6.jpg" alt="">
+    <img src="images/pres7.jpg" alt="">
+    <img src="images/pres8.jpg" alt="">
+  </div>
+</div>
+
+<!--底部-->
+<footer></footer>
+
+
+<script>
+  $(function () {
+
+    // 缩略图
+    var mySwiper = new Swiper('.pi-small .swiper-container',{
+      speed: 600,
+      slidesPerView : 5,
+      autoplayDisableOnInteraction : false
+      //其他设置
+    });
+    $('.pi-pag-prev').click(function () {
+      mySwiper.swipePrev();
+    });
+    $('.pi-pag-next').click(function () {
+      mySwiper.swipeNext();
+    });
+
+
+    // 切换缩略图
+    $('.pi-big .pi-big-img').eq(0).show(); //默认展示第一个
+    $('.pi-small .swiper-slide').eq(0).find('.pi-small-img').addClass('on');
+
+    $('.pi-small .pi-small-img').click(function () {
+      var index = $(this).parent().index();
+      $('.pi-small-img').removeClass('on');
+      $(this).addClass('on');
+      $('.pi-big-img').hide();
+      $('.pi-big .pi-big-img').eq(index).stop().fadeIn();
+    });
+
+    // 弹窗
+    $('.pd-dark-bg').click(function () {
+      $('.pd-dark').hide();
+    });
+    $('.pdd-close').click(function () {
+      $('.pd-dark').hide();
+    });
+    $('.product-btn-buy').click(function () {
+      $('.pd-dark').show();
+    })
+
+  })
+</script>
+</body>
+</html>

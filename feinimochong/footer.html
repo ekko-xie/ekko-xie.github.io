@@ -1,23 +1,49 @@
 
 
+<!--侧边栏-->
+<div class="sidebar">
+  <ul class="sidebar-ul">
+    <li class="sidebar-li sidebar-li1">
+      <div class="sidebar-icon"><a class="go-top" href="#"></a></div>
+    </li>
+    <li class="sidebar-li sidebar-li2">
+      <div class="sidebar-wrap">
+        <div class="sidebar-icon">&nbsp;</div><div class="sidebar-p">329715718</div>
+      </div>
+    </li>
+    <li class="sidebar-li sidebar-li3">
+      <div class="sidebar-wrap">
+        <div class="sidebar-icon">&nbsp;</div><div class="sidebar-p">15817273766</div>
+      </div>
+    </li>
+    <li class="sidebar-li sidebar-li4">
+      <div class="sidebar-icon"></div>
+      <div class="sidebar-code">
+        <img src="images/qr-code.jpg" alt="">
+      </div>
+    </li>
+  </ul>
+</div>
+
+
 <div class="footer-content">
   <div class="wrap">
     <div class="footer-nav">
-      <a class="on" href="#">首页</a>
+      <a class="on" href="index.html">首页</a>
       <span>/</span>
-      <a href="#">品牌介绍</a>
+      <a href="brand.html">品牌介绍</a>
       <span>/</span>
-      <a href="#">品牌故事</a>
+      <a href="story.html">品牌故事</a>
       <span>/</span>
-      <a href="#">品牌文化</a>
+      <a href="culture.html">品牌文化</a>
       <span>/</span>
-      <a href="#">品牌优势</a>
+      <a href="advantage.html">品牌优势</a>
       <span>/</span>
-      <a href="#">产品中心</a>
+      <a href="product.html">产品中心</a>
       <span>/</span>
-      <a href="#">养宠中心</a>
+      <a href="pet.html">养宠中心</a>
       <span>/</span>
-      <a href="#">联系我们</a>
+      <a href="contact.html">联系我们</a>
     </div>
     <div class="footer-copyright">Copyright © 深圳市非你莫宠文化传播有限公司 All rights reserved</div>
     <div class="footer-share">
@@ -50,3 +76,15 @@
   </div>
 
 </div>
+
+
+<script>
+  $(function () {
+
+    //平滑回到顶部
+    $('.go-top').click(function(){
+      $('html,body').stop().animate({scrollTop: '0px'}, 600);
+      return false;
+    });
+  })
+</script>

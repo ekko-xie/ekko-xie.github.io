@@ -23,6 +23,7 @@
 <body>
 
 
+
 <!--首页头部，和内页不一样-->
 <div class="index-header"></div>
 
@@ -41,15 +42,15 @@
 <div class="index-section index-brand">
   <div class="wrap clearfix">
     <div class="index-box">
-      <div class="index-box-title">
+      <div class="index-box-title anim anim1">
         <h3>品牌介绍</h3>
         <p>Brand introduction</p>
         <div class="ibox-title-line"></div>
       </div>
-      <div class="index-box-p">
+      <div class="index-box-p anim anim2">
         非你莫宠成立于2017年，从事于全系列的狗粮的研发、生产、销售，是一家集狗粮、服饰等宠物旅行为一体的综合性宠物产品品牌，致力于成为全中国、乃至全世界高端的纯天然鲜肉狗粮品牌。
       </div>
-      <a class="index-box-more" href="#">
+      <a class="index-box-more anim anim2" href="brand.html">
         <p>了解更多 <span class="ibm-arrow">&nbsp;</span></p>
       </a>
     </div>
@@ -59,16 +60,16 @@
 <div class="index-section index-story">
   <div class="wrap clearfix" style="text-align: right;">
     <div class="index-box">
-      <div class="index-box-title">
+      <div class="index-box-title anim anim1">
         <h3>品牌故事</h3>
         <p>Brand story</p>
         <div class="ibox-title-line"></div>
       </div>
-      <div class="index-box-p">
+      <div class="index-box-p anim anim2">
         <div style="font-size: 30px;color: #ff8a00;line-height: 50px;">非你莫宠，源于最真实的喜爱。</div>
         狗狗是我们的好朋友,每每看见街道上那些或是可爱、或是威武、或是严肃的狗狗时,都想给它们带来最好的一切。而非你莫宠正是在这之.上迸发出来的灵感一一必须创立一个属于...
       </div>
-      <a class="index-box-more" href="#">
+      <a class="index-box-more anim anim2" href="story.html">
         <p>了解更多 <span class="ibm-arrow">&nbsp;</span></p>
       </a>
     </div>
@@ -77,12 +78,12 @@
 
 
 
-<div class="index-product">
+<div class="index-product anim anim1">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background: url('images/index-product1.jpg') center center / cover;"><a href="#"></a></div>
-      <div class="swiper-slide" style="background: url('images/index-product1.jpg') center center / cover;"><a href="#"></a></div>
-      <div class="swiper-slide" style="background: url('images/index-product1.jpg') center center / cover;"><a href="#"></a></div>
+      <div class="swiper-slide" style="background: url('images/index-product1.jpg') center center / cover;"><a href="product-detail.html"></a></div>
+      <div class="swiper-slide" style="background: url('images/index-product1.jpg') center center / cover;"><a href="product-detail.html"></a></div>
+      <div class="swiper-slide" style="background: url('images/index-product1.jpg') center center / cover;"><a href="product-detail.html"></a></div>
     </div>
     <div class="ip-pag">
       <span class="ip-pag-btn ip-pag-prev"></span>
@@ -92,7 +93,7 @@
 </div>
 
 
-<div class="index-commit">
+<div class="index-commit anim anim1">
   <div class="wrap">
     <div class="index-commit-title">
       <h3>
@@ -176,6 +177,27 @@
     $('.ip-pag-next').click(function () {
       mySwiper2.swipeNext();
     });
+
+    //滚动监控添加动画
+    var anim = $(".anim");//触发遍历所用的类
+    setTimeout(function(){
+      $(window).scroll(function() {
+        roll();
+      });
+      $(window).resize(function() {
+        roll();
+      });
+      roll();
+    },6);
+    function roll() {
+      var oHeight = $(window).height();
+      var ScrVal = $(window).scrollTop();
+      anim.each(function(i) {
+        if (ScrVal + oHeight > anim.eq(i).offset().top - 50 ){
+          anim.eq(i).addClass("anim-show");
+        }
+      })
+    }
   })
 </script>
 
