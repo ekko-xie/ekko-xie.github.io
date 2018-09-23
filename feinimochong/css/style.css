@@ -9,16 +9,24 @@ html {
 
 .anim1{
   opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translateY(100px);
   transform: translateY(100px);
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .anim2{
   opacity: 0;
+  filter: alpha(opacity=0);
+  -webkittransform: translateY(100px);
   transform: translateY(100px);
+  -webkit-transition: all 0.5s ease 0.2s;
   transition: all 0.5s ease 0.2s;
 }
 .anim-show{
   opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: none !important;
   transform: none !important;
 }
 
@@ -41,6 +49,7 @@ html {
   color: #333333;
   border-radius: 6px;
   margin: 0 2px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .nav-a:hover {
@@ -75,6 +84,7 @@ html {
   background: #ff8a00;
   margin: 0 5px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .index-banner .swiper-active-switch {
@@ -414,9 +424,11 @@ html {
   overflow: hidden;
 }
 .culture-box-img img{
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .culture-box:hover .culture-box-img img{
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .culture-box-p{
@@ -510,9 +522,11 @@ html {
   overflow: hidden;
 }
 .product-box-img img{
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .product-box:hover .product-box-img img{
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .product-box-p{
@@ -565,6 +579,7 @@ html {
   margin-top: 20px;
   padding: 46px 24px;
   background-color: #f6f6f6;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .pet-box:hover{
@@ -575,9 +590,11 @@ html {
   overflow: hidden;
 }
 .pet-box-img img{
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .pet-box:hover .pet-box-img img{
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 .pet-box-p{
@@ -592,6 +609,7 @@ html {
   color: #333333;
   margin-top: 30px;
   line-height: 24px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .pet-box:hover .pet-box-p h4{
@@ -603,6 +621,7 @@ html {
   margin-top: 20px;
   max-height: 144px;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .pet-box:hover .pet-box-p p{
@@ -616,6 +635,7 @@ html {
   width: 18px;
   height: 34px;
   background: url("../images/pet-arrow.png") no-repeat;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .pet-box:hover .pet-box-arrow{
@@ -632,6 +652,7 @@ html {
   font-size: 18px;
   margin: 0 4px;
   border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .page a:hover, .page a.on{
@@ -898,6 +919,7 @@ html {
   height: 100%;
   background: #000;
   opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .pdd-close{
   position: absolute;
@@ -971,9 +993,11 @@ html {
   white-space: nowrap;
   font-size: 0;
   width: 142px;
+  -webkittransition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .sidebar-li:hover .sidebar-wrap{
+  -webkit-transform: translateX(-80%);
   transform: translateX(-80%);
 }
 .sidebar-p{
