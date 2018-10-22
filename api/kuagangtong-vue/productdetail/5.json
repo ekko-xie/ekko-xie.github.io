@@ -1,6 +1,6 @@
 {
   "title": "别克 凯越 2011款 1.6LX-AT",
-  "image": "/static/img/inc-img2.jpg",
+  "image": "./static/img/inc-img2.jpg",
   "price": 131300,
   "deposit": 130,
   "max_num": 66
