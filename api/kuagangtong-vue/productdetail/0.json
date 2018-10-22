@@ -1,6 +1,6 @@
 {
   "title": "专业级新中产家庭SUV",
-  "image": "/static/img/inc-img1.jpg",
+  "image": "./static/img/inc-img1.jpg",
   "price": 54600,
   "deposit": 99,
   "max_num": 66
