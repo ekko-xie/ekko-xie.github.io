@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=0">
+	<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="">
+	<title>山西科创</title>
+	<link rel="stylesheet" href="css/idangerous.swiper.css"/>
+	<link rel="stylesheet" href="css/css-reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/idangerous.swiper.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.js"></script>
+	<script src="js/basic.js"></script>
+
+
+	<!--[if lt IE 9]><script src="js/html5.js" ></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/selectivizr-min.js" ></script><![endif]-->
+
+
+</head>
+<body>
+  <h1>首页</h1>
+
+
+
+<script>
+	$(function () {
+
+		//滚动监控添加动画
+		var anim = $(".anim");//触发遍历所用的类
+		setTimeout(function(){
+			$(window).scroll(function() {
+				roll();
+			})
+			$(window).resize(function() {
+				roll();
+			})
+			roll();
+		},6)
+		function roll() {
+			var oHeight = $(window).height();
+			var ScrVal = $(window).scrollTop();
+			anim.each(function(i) {
+				if (ScrVal + oHeight > anim.eq(i).offset().top - 50 ){
+					anim.eq(i).addClass("anim-show");
+				}
+			})
+		}
+
+
+	})
+
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+
+
+/*仅用于PC效果*/
+@media screen and (min-width: 1220px) {
+    .indy-p:hover{color: #283a83;}
+    .nav-li:hover .nav-a{background-color: #283a83;color: #fff;}
+
+    .iso-box:hover{border-bottom: 3px solid #2a3c83;}
+    .iso-box:hover .iso-box-img img{transform: scale(1.1);}
+    .iso-box:hover .iso-box-p{background-color: #2a3c83;bottom: 0;}
+    .iso-box:hover .iso-box-p h3{color: #fff;}
+    .iso-box:hover .iso-box-p p{color: #ffffff;}
+
+    .iserr-box:hover{background: #283a83;}
+    .iserr-box:hover p{color: #fff;}
+    .iserr-box1:hover .iserr-box-icon{background: url("../images/iseb1-on.png") no-repeat center center;}
+    .iserr-box2:hover .iserr-box-icon{background: url("../images/iseb2-on.png") no-repeat center center;}
+    .iserr-box3:hover .iserr-box-icon{background: url("../images/iseb3-on.png") no-repeat center center;}
+    .iserr-box4:hover .iserr-box-icon{background: url("../images/iseb4-on.png") no-repeat center center;}
+
+    .ia-img:hover img{transform: scale(1.1);}
+    .index-brand-box:hover img{transform: scale(1.1);}
+    .footer-list-con p a:hover{color: #fff;}
+    .inner-list-box:hover p{color: #cd9136;}
+    .inner-list-box:hover .inner-list-icon{display: block;}
+    .ah-box:hover p{color: #283a83;}
+    .page a:hover{background-color: #182987;color: #fff;}
+    .product-box:hover .product-box-img img{transform: scale(1.1);}
+    .product-box:hover .product-box-more{color: #fff;background-color: #283a83;}
+
+    .product-small .swiper-button-prev:hover{
+        background: url("../images/pd-prev-on.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .product-small .swiper-button-next:hover{
+        background: url("../images/pd-next-on.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .news-box:hover{background-color: #f8f8f8;}
+    .news-box:hover .news-box-img img{transform: scale(1.1);}
+    .news-box:hover .news-box-title{color: #283a83;}
+
+    .case-box:hover .case-box-img{border: 1px solid #023e76;}
+    .case-box:hover .case-box-img img{transform: scale(1.1);}
+    .nd-pn-prev a:hover{color: #283a83;}
+    .nd-pn-next a:hover{color: #283a83;}
+    .re-tip:hover p{color: #182987;}
+    .re-tip:hover{border: 1px solid #182987;}
+
+    .web-map-link a:hover{border: 1px solid #1b57ac;color: #1b57ac;}
+    .lci-p a:hover{color: #182987;}
+    .islc-more:hover{background-color: #3D5AC9;}
+
+
+
+
+
+}
+
+
+/*适配平板*/
+@media screen and (min-width: 761px) and (max-width: 1219px){
+    .wrap{width: 92%;}
+    .phone-hc{display: block;}
+
+    .header-rb{display: none;}
+    .hrt-phone{display: none;}
+    .hrt-line{display: none;}
+    .hrt-webmap{display: none;}
+
+
+}
+
+/*适配平板竖屏*/
+@media screen and (min-width: 761px) and (max-width: 1000px){
+    .ia-info-p{height: 48px;margin-top: 10px;}
+    .ia-info .islc-more{margin-top: 14px;}
+
+}
+
+
+/*适配手机*/
+@media screen and (max-width: 760px){
+    .wrap{width: 92%;}
+    /*苹果input圆角阴影兼容*/
+    input[type="submit"],input[type="reset"],input[type="button"],input[type="text"],input[type="password"],button,textarea,select{ -webkit-appearance: none;appearance: none; border-radius: 0; }
+
+
+    .phone-hc{display: block;}
+    .header-content{height: 90px;}
+    .header-rb{display: none;}
+    .hrt-phone{display: none;}
+    .hrt-line{display: none;}
+    .hrt-webmap{display: none;}
+    .logo{width: 150px;margin-top: 20px;}
+    .header-rt{margin-top: 7px;}
+    .hrt-btn a{line-height: 26px;}
+    .phone-hc{margin-top: 2px;}
+    .phone-menu{top: 94px;}
+
+}
+
+
+
+
+
