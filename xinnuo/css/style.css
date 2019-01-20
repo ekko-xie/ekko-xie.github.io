@@ -1060,14 +1060,23 @@ body{
     margin-top: 1px;
     margin-top: 6px;
 }
+.donate-box1 .db-radio{
+    margin-top: 18px;
+}
 .donate-box-ic.fl .db-radio{
     margin-top: 14px;
+}
+.donate-box1 .donate-box-ic{
+    margin-top: -6px;
 }
 .donate-box-ic span{
     float: left;
     margin-right: 20px;
     margin-left: 2px;
     margin-top: 6px;
+}
+.donate-box1 .donate-box-ic span{
+    margin-top: 17px;
 }
 .donate-box-ic.fl span{
     margin-top: 14px;
@@ -1078,6 +1087,7 @@ body{
     width: 70px;
     padding: 0 5px;
     background: #f8f8f8;
+    margin-top: 11px;
     border: 1px solid #eeeeee;
 }
 .db-input2{
