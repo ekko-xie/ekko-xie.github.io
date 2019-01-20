@@ -1,0 +1,142 @@
+<div class="header-content">
+  <div class="wrap clearfix">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+    </div>
+    <div class="header-right">
+
+      <div class="header-rb clearfix">
+        <!--PC导航-->
+        <ul class="nav clearfix">
+          <li class="nav-li on">
+            <a class="nav-a" href="index.html">网站首页</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="activity.html">公益活动</a>
+            <!-- <div class="nav-menu clearfix">
+              <div class="nav-menu-c">
+                <p><a href="about.html">企业简介</a></p>
+                <p><a href="about-culture.html">企业文化</a></p>
+                <p><a href="about-develop.html">发展历程</a></p>
+                <p><a href="about-honor.html">企业荣誉</a></p>
+                <p><a href="about-system.html">质量体系</a></p>
+              </div>
+              <div class="nav-bar-img">
+                <img src="./images/nav-bar-img.jpg" alt="">
+              </div>
+            </div> -->
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="vision.html">公益影像</a>
+
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="information.html">信息公开</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="news.html">新闻中心</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="about.html">关于我们</a>
+            <div class="nav-menu nav-menu2 clearfix">
+              <div class="nav-menu-c">
+                <p><a href="about.html">基金会简介</a></p>
+                <p><a href="about-contact.html">联系我们</a></p>
+                <p><a href="about-recruit.html">人才招聘</a></p>
+              </div>
+              <div class="nav-bar-img">
+                <a href="#">
+                  <img src="./images/nav-bar-img.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="donate-btn">
+          <a href="donate.html">
+            <i></i><span>我要捐赠</span>
+          </a>
+        </div>
+      </div>
+
+      <!--手机版導航-->
+      <div class="phone-hc clearfix">
+        <div class="phone-nav">
+          <div class="phone-nav-icon"></div>
+
+          <div class="phone-menu">
+            <div class="phone-menu-list">
+              <div class="phone-menu-title clearfix">
+                <a href="index.html">网站首页</a>
+              </div>
+            </div>
+            <div class="phone-menu-list">
+              <div class="phone-menu-title clearfix">
+                <a href="about.html">公益活动</a>
+              </div>
+            </div>
+            <div class="phone-menu-list">
+              <div class="phone-menu-title clearfix">
+                <a href="product.html">公益影像</a>
+              </div>
+            </div>
+            <div class="phone-menu-list">
+              <div class="phone-menu-title clearfix">
+                <a href="news.html">信息公开</a>
+              </div>
+            </div>
+            <div class="phone-menu-list">
+              <div class="phone-menu-title clearfix">
+                <a href="case.html">新闻中心</a>
+              </div>
+            </div>
+            <div class="phone-menu-list">
+              <div class="phone-menu-title clearfix">
+                <a href="support.html">关于我们</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  $(function () {
+    //PC导航下拉
+    $('.nav-li').hover(function () {
+      $(this).find('.nav-menu').stop(true, true).slideDown();
+    }, function () {
+      $(this).find('.nav-menu').stop().slideUp();
+    });
+
+
+    //手机导航下拉
+    $('.phone-nav-icon').click(function (e) {
+      $('.phone-search-content').hide();
+      $('.search-box').removeClass('on');
+      $('.search-btn').removeClass('on');
+      if ($('.phone-menu').is(":hidden")) {
+        $('.phone-menu').stop().slideDown();
+        $(document).one("click", function () {
+          $('.phone-menu').stop().slideUp();
+        });
+        e.stopPropagation();
+
+      } else {
+        $('.phone-menu').stop().slideUp();
+      }
+    });
+    $('.phone-menu').on("click", function (e) {
+      e.stopPropagation();
+    });
+
+  })
+</script>
