@@ -127,7 +127,7 @@
                 </div>
               </div>
               <div class="donate-box clearfix">
-                <input class="db-submit" type="submit" value="提交">
+                <input class="db-submit" type="button" value="提交">
               </div>
             </form>
           </div>
@@ -150,6 +150,38 @@
   <!-- 底部 -->
   <footer></footer>
 
+
+  <!-- 弹窗 -->
+  <div class="donate-pop">
+    <div class="video-container">
+      <div class="donate-close">×</div>
+      <div class="video-bg"></div>
+      <div class="donate-qr">
+        <img src="./images/qr-code3.jpg" alt="">
+        <img src="./images/qr-code3-p.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(function () {
+      // 打开弹窗
+      $('.db-submit').click(function () {
+        $('.donate-pop').show()
+      })
+      // 关闭弹窗
+      $('.video-bg').click(function () {
+        $('.donate-pop').hide()
+        console.log(11)
+      })
+      // 关闭弹窗
+      $('.donate-close').click(function () {
+        $('.donate-pop').hide()
+        console.log(11)
+      })
+    })
+  </script>
 </body>
 
 </html>

@@ -13,7 +13,6 @@
     .index-part-box3:hover .ipb-p i{background: url('../images/ipb-icon3-on.png') no-repeat center center;}
     .in-big:hover .in-big-img img{transform: scale(1.2)}
     .in-big:hover .in-big-p h4{color: #062c6f;}
-    .in-big:hover .in-more{padding-right: 30px;}
     .in-list:hover h4{color: #062c6f;}
     .iac-img:hover .iac-img-container{transform: scale(1.2)}
     .ipn-box:hover img{transform: scale(1.1)}
@@ -208,6 +207,8 @@
         right: 10%;
         bottom: 10%;
     }
+
+    .donate-qr{width: 200px;height: 246px;margin-left: -100px;margin-top: -123px;}
 
 }
 

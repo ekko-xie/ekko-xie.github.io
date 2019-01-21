@@ -175,6 +175,10 @@ body{
     cursor: pointer;
     margin-left: 60px;
     margin-top: 30px;
+    transition: all 0.5s;
+}
+.donate-btn:hover{
+    background-color: #1b66e7;
 }
 .donate-btn a{
     display: block;
@@ -192,6 +196,30 @@ body{
     vertical-align: middle;
     font-size: 18px;
     color: #fff;
+}
+.donate-qr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    width: 400px;
+    height: 400px;
+    z-index: 99;
+    background: #fff;
+    text-align: center
+}
+.donate-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 99;
+}
+.donate-pop{
+    display: none;
 }
 
 
@@ -428,6 +456,14 @@ body{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+.in-left:hover .in-more{
+    color: #062c6f;
+    background: url('../images/more-on.png') no-repeat right center;
+}
+.iac-info:hover .in-more{
+    color: #062c6f;
+    background: url('../images/more-on.png') no-repeat right center;
+}
 .in-right{
     float: right;
     width: 48%;
@@ -487,6 +523,11 @@ body{
     line-height: 34px;
     color: #1d1d1d;
     font-weight: normal;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.iac-info:hover .iac-p h3{
+    color: #062c6f;
 }
 .iac-p p{
     color: #666666;
