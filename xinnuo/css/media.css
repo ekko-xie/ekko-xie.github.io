@@ -54,6 +54,8 @@
     .news-box-img{width: 40%;}
     .news-box-p{width: 56%;}
 
+    .donate-btn{margin-left: 0;}
+
 
 }
 
@@ -92,7 +94,7 @@
     .hrt-btn a{line-height: 26px;}
     .phone-menu{top: 60px;}
     .phone-nav-icon{background-size: 22px 16px;}
-    .donate-btn{width: 100px;line-height: 28px;margin-top: 14px;}
+    .donate-btn{width: 100px;line-height: 28px;margin-top: 14px;margin-left: 0;}
     .donate-btn i{background-size: 14px;}
     .donate-btn span{font-size: 10px;}
 
