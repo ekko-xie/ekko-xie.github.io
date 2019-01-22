@@ -1117,6 +1117,11 @@ body{
     margin-top: 1px;
     margin-top: 6px;
 }
+.dbra-box{
+    float: left;
+    min-width: 50px;
+    padding-right: 10px;
+}
 .donate-box1 .db-radio{
     margin-top: 18px;
 }
@@ -1128,7 +1133,7 @@ body{
 }
 .donate-box-ic span{
     float: left;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-left: 2px;
     margin-top: 7px;
 }
@@ -1146,6 +1151,7 @@ body{
     background: #f8f8f8;
     margin-top: 11px;
     border: 1px solid #eeeeee;
+    margin-left: 10px;
 }
 .db-input2{
     float: left;
