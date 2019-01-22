@@ -3,7 +3,8 @@
 /*仅用于PC效果*/
 @media screen and (min-width: 1220px) {
     .indy-p:hover{color: #062c6f;}
-    .nav-li:hover .nav-a{background-color: #062c6f;color: #fff;}
+    .nav-li:hover .nav-a{background-color: #062c6f;color: #fff;border-bottom: 2px solid #4683ee;}
+    .nav-li:hover .tri{display: block;}
 
     .index-part-box:hover .ipb-img img{transform: scale(1.2);}
     .index-part-box:hover .ipb-p{background: #062c6f;}

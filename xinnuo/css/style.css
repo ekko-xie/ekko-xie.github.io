@@ -43,7 +43,7 @@ body{
     left: 0;
     width: 100%;
     height: 110px;
-    box-shadow: 0 1px 3px #999;
+    /* box-shadow: 0 1px 3px #999; */
     background: #fff;
     z-index: 99;
     /*transition: all 0.5s ease;*/
@@ -113,17 +113,32 @@ body{
     height: 110px;
 }
 .nav-a{
+    position: relative;
     display: inline-block;
     padding: 0 18px;
-    line-height: 110px;
+    line-height: 108px;
     font-size: 16px;
     color: #383838;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    /* -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
 }
 .nav-li.on .nav-a{
     background-color: #062c6f;
     color: #fff;
+    border-bottom: 2px solid #4683ee;
+}
+.tri{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -4px;
+    width: 8px;
+    height: 5px;
+    background: url('../images/tri.png') no-repeat;
+    display: none;
+}
+.nav-li.on .tri{
+    display: block;
 }
 
 .nav-li-line{
@@ -139,7 +154,7 @@ body{
     top: 110px;
     left: 0;
     width: 390px;
-    background-color: #062c6f;
+    background-color: #4683ee;
     box-shadow: 0 0 6px #999;
     display: none;
     z-index: 99;
@@ -179,7 +194,7 @@ body{
     transition: all 0.5s;
 }
 .donate-btn:hover{
-    background-color: #1b66e7;
+    background-color: #437ce5;
 }
 .donate-btn a{
     display: block;
