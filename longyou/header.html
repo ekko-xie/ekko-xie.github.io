@@ -1,0 +1,110 @@
+
+
+  <div class="header-content">
+    <div class="wrap clearfix">
+      <div class="logo clearfix">
+        <a href="index.html">
+          <img class="logo-img" width="74" height="74" src="images/logo.png" alt="">
+          <div class="logo-p">
+            <h4>龙游森凯建设有限公司</h4>
+            <p>longyousenkaijiansheyouxiangongsi</p>
+          </div>
+        </a>
+      </div>
+  
+      <!-- 导航 -->
+      <div class="nav-container">
+        <ul class="nav-ul">
+  
+          <li class="nav-list on" style="position: relative;">
+            <a class="nav-a" href="index.html">首页</a>
+          </li>
+          <li class="nav-list" style="position: relative;">
+            <a class="nav-a" href="about.html">关于我们</a>
+            <div class="nav-dropdown nav-dropdown2">
+              <div class="nd2-menu">
+                <p><a href="about.html">公司介绍</a></p>
+                <p><a href="about-honor.html">资质证书</a></p>
+                <p><a href="about-project.html">工程项目</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-list" style="position: relative;">
+            <a class="nav-a" href="service.html">业务范围</a>
+            <div class="nav-dropdown nav-dropdown2">
+              <div class="nd2-menu">
+                <p><a href="service.html">财务信息</a></p>
+                <p><a href="service-buy.html">采购信息</a></p>
+                <p><a href="service-material.html">材料信息</a></p>
+                <p><a href="service-contract.html">合同信息</a></p>
+                <p><a href="service-rule.html">制度信息</a></p>
+                <p><a href="service-car.html">机械车辆信息</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-list" style="position: relative;">
+            <a class="nav-a" href="news.html">新闻资讯</a>
+            <div class="nav-dropdown nav-dropdown2">
+              <div class="nd2-menu">
+                <p><a href="news.html">公司资讯</a></p>
+                <p><a href="news.html">行业新闻</a></p>
+                <p><a href="news.html">项目部风采</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="nav-list" style="position: relative;">
+            <a class="nav-a" href="contact.html">联络我们</a>
+          </li>
+          <li class="nav-list" style="position: relative;">
+            <a class="nav-a" href="#">采购平台</a>
+          </li>
+        </ul>
+  
+      </div>
+  
+      <!--搜索-->
+      <div class="search-content">
+        <div class="search-btn"></div>
+        <div class="search-box">
+          <div class="search-box-i">
+            <form action="">
+              <input class="search-input" placeholder="Search" type="text">
+              <input class="search-submit" type="submit" value="">
+            </form>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+  <script>
+    $(function() {
+      // 导航下拉
+      $('.nav-list').mouseenter(function () {
+        $('.nav-dropdown').hide();
+        $(this).find('.nav-dropdown').stop().slideDown();
+      }).mouseleave(function () {
+        $('.nav-dropdown').hide();
+      });
+
+      //搜索框
+      $('.search-btn').click(function (e) {
+        if ($('.search-box').hasClass('on')) {
+          $('.search-box').removeClass('on');
+        } else {
+          $('.search-box').addClass('on');
+          $(document).one("click", function () {
+            $('.search-box').removeClass('on');
+          });
+          e.stopPropagation();
+        }
+      });
+      $('.search-box').on("click", function (e) {
+        e.stopPropagation();
+      });
+      
+
+    })
+  </script>

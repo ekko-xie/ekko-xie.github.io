@@ -1,0 +1,36 @@
+
+<div class="login">
+  <div class="login-bg"></div>
+  <div class="login-box">
+    <div class="login-close">×</div>
+    <div class="login-box-title">内部系统登录</div>
+    <div class="login-box-content">
+      <div class="login-box-list">
+        <p class="login-blist-p">登录名：</p>
+        <input class="login-input1" type="text">
+      </div>
+      <div class="login-box-list">
+        <p class="login-blist-p">登录密码：</p>
+        <input class="login-input1" type="password">
+      </div>
+      <input class="login-submit" type="submit" value="登录">
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    // 关闭弹窗
+    $('.login-submit').click(function() {
+      $('.login').hide();
+    })
+    $('.login-bg').click(function () {
+      $('.login').hide();
+    })
+    $('.login-close').click(function () {
+      $('.login').hide();
+    })
+    
+  })
+</script>
+
