@@ -55,10 +55,10 @@
 
 	<div class="index-service">
 		<div class="wrap index-service-wrap">
-			<div class="index-title">
+			<div class="index-title anim anim1">
 				<p>业务范围<span>Service Range</span></p>
 			</div>
-			<div class="index-service-content">
+			<div class="index-service-content anim anim2">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -149,7 +149,7 @@
 		</div>
 	</div>
 
-	<div class="index-news">
+	<div class="index-news anim anim1">
 		<div class="wrap">
 			<div class="index-news-content clearfix">
 				<div class="in-left">
@@ -349,10 +349,10 @@
 
 	<div class="index-service index-engineer">
 		<div class="wrap index-engineer-wrap">
-			<div class="index-title">
+			<div class="index-title anim anim1">
 				<p>工程影象<span>Engineering Image</span></p>
 			</div>
-			<div class="index-engineer-content">
+			<div class="index-engineer-content anim anim2">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -457,6 +457,27 @@
 
 	<script>
 		$(function () {
+
+			//滚动监控添加动画
+			var anim = $(".anim");//触发遍历所用的类
+			setTimeout(function () {
+				$(window).scroll(function () {
+					roll();
+				});
+				$(window).resize(function () {
+					roll();
+				});
+				roll();
+			}, 6);
+			function roll() {
+				var oHeight = $(window).height();
+				var ScrVal = $(window).scrollTop();
+				anim.each(function (i) {
+					if (ScrVal + oHeight > anim.eq(i).offset().top - 50) {
+						anim.eq(i).addClass("anim-show");
+					}
+				})
+			}
 			
 
 			//banner
