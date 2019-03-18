@@ -272,9 +272,11 @@ html{
 }
 .is-box-img img{
     width: 100%;
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .is-box:hover .is-box-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .is-box-p h4{
@@ -333,6 +335,7 @@ html{
     margin-right: 20px;
     cursor: pointer;
     text-align: center;
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .in-tab span:hover, .in-tab span.on{
@@ -355,9 +358,11 @@ html{
     overflow: hidden;
 }
 .in-list-big-img img{
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .in-list-big:hover .in-list-big-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .in-list-big-p{
@@ -468,9 +473,11 @@ html{
     overflow: hidden;
 }
 .inr-list-img img{
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .inr-list:hover .inr-list-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .index-engineer-content{
@@ -670,7 +677,7 @@ html{
     opacity: 1 !important;
 }
 
-.about-project{
+.about-project-detail{
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -786,6 +793,7 @@ html{
     border: 1px solid #666666;
     padding: 8px 10px;
     margin: 0 5px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .page a:hover, .page a.on{
@@ -884,9 +892,11 @@ html{
 }
 .news-list-img img{
     width: 100%;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .news-list:hover .news-list-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .news-list-p{
@@ -922,6 +932,7 @@ html{
     background-color: #3363ad;
     color: #fff;
     font-size: 12px;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -1087,4 +1098,141 @@ html{
     white-space: nowrap;
 }
 
+.about-project{
+    padding-bottom: 70px;
+}
+.about-project-content{
+    padding-bottom: 20px;
+}
+.ap-box{
+    position: relative;
+    float: left;
+    width: 378px;
+    margin-left: 32px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.about-project-content .ap-box:nth-child(3n+1){
+    margin-left: 0;
+}
+.ap-box-img img{
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ap-box:hover .ap-box-img img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.ap-box-p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: url('../images/bg-black50.png');
+    z-index: 2;
+}
+.ap-box:hover .ap-box-p{
+    display: none;
+}
+.ap-box-p p{
+    line-height: 54px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 14px;
+}
+.ap-box-dark{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg-black50.png');
+    z-index: 10;
+    text-align: center;
+    /* display: none; */
+}
+.ap-box:hover .ap-box-dark{
+    /* display: block; */
+    top: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 
+}
+.apd-link{
+    margin-top: 56px;
+}
+.apd-p{
+    font-size: 14px;
+    line-height: 24px;
+    height: 72px;
+    overflow: hidden;
+    color: #fff;
+    padding: 0 40px;
+    margin-top: 24px;
+}
+
+
+.service-download{
+    padding-bottom: 20px;
+}
+.sd-list{
+    border: 1px dashed #cccccc;
+    margin-top: 30px;
+}
+.sd-list:hover{
+    border: 1px dashed #3363ad;
+}
+.sd-list-date{
+    float: left;
+    height: 58px;
+    width: 80px;
+    border-right: 1px dashed #cccccc;
+    line-height: 20px;
+    color: #b2b2b2;
+    font-size: 15px;
+    text-align: center;
+}
+.sd-list:hover .sd-list-date{
+    color: #3363ad;
+    border-right: 1px dashed #3363ad;
+}
+.sd-list-date em{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+}
+.sd-list-p{
+    float: left;
+    line-height: 58px;
+    font-size: 18px;
+    padding: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 700px;
+}
+.sd-list:hover .sd-list-p{
+    color: #3363ad;
+}
+.sd-list-btn{
+    display: inline-block;
+    float: right;
+    padding: 0 20px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: #595959;
+}
+.sd-list:hover .sd-list-btn{
+    background-color: #3363ad;
+}
