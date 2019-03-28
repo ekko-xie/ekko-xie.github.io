@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="author" content="">
+  <title>翼邦</title>
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/css-reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.js"></script>
+  <script src="js/basic.js"></script>
+
+
+  <!--[if lt IE 9]><script src="js/html5.js" ></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/selectivizr-min.js" ></script><![endif]-->
+
+
+</head>
+<body style="background: #f6f9fc;">
+
+  <!-- 头部 -->
+  <header></header>
+  
+  
+  <div class="inner-navbar nobg">
+    <div class="wrap clearfix">
+      <div class="breadcrumb clearfix">
+        <div class="breadcrumb-house"></div>
+        <span>|</span>
+        <a href="#">首页</a>
+        <span>&gt;</span>
+        <a href="#">关于我们</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="service">
+    <div class="wrap clearfix">
+      <!-- 导航 -->
+      <div class="service-nav">
+        <div class="service-nav-title">产品与服务</div>
+
+        <div class="sn-box on">
+          <div class="sn-box-head">UWL Freight</div>
+          <ul class="sn-box-ul">
+            <li class="on"><a href="#">空运服务</a></li>
+            <li><a href="#">海运服务</a></li>
+          </ul>
+        </div>
+
+        <div class="sn-box">
+          <div class="sn-box-head">UWL Post</div>
+          <ul class="sn-box-ul">
+            <li><a href="#">中国邮政专线</a></li>
+            <li><a href="#">外邮专线</a></li>
+          </ul>
+        </div>
+
+        <div class="sn-box">
+          <div class="sn-box-head">UWL Express</div>
+          <ul class="sn-box-ul">
+            <li><a href="#">虚拟海外仓服务</a></li>
+            <li><a href="#">出口小包专线服务</a></li>
+            <li><a href="#">出口小包快递服务</a></li>
+          </ul>
+        </div>
+
+        <div class="sn-box">
+          <div class="sn-box-head">UWL DDP</div>
+          <ul class="sn-box-ul">
+            <li><a href="#">出口FBA</a></li>
+            <li><a href="#">超大件DDP</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="service-content">
+        <div class="sc-title clearfix">
+          <div class="sc-title-icon">
+            <img src="./images/ser-title.png" alt="">
+          </div>
+          <div class="sc-title-p">
+            <h4>干线服务</h4>
+            <p>UWL Freight</p>
+          </div>
+
+        </div>
+        <div class="sc-p">
+          UEQ利用自身全球智能递送网络资源，在国内揽收包裹后，交付DHL、FedEx、UPS或TNT，由四大快递负责从国内至海外消费者的全程服务产品，覆盖全球主要国家。
+        </div>
+
+        <div class="sc-feature">
+          <div class="sc-subhead clearfix">
+            <img src="./images/sub-car.jpg" alt="">
+            <span>|</span>
+            <p>产品特性</p>
+          </div>
+          <div class="sc-fearture">
+            <p>◆ 四大快递优质资源</p>
+            <p>◆ 国际标准化服务</p>
+            <p>◆ 全球网络覆盖</p>
+            <p>◆ 时效稳定可控</p>
+            <p>◆ 全程路由跟踪</p>
+          </div>
+        </div>
+
+        <div class="sc-line">
+          <div class="sc-subhead clearfix">
+            <img src="./images/sub-car.jpg" alt="">
+            <span>|</span>
+            <p>已开通线路</p>
+          </div>
+          <div class="sc-line-ip clearfix">
+            <div class="sc-line-box">
+              <a class="clearfix" href="#">
+                <img src="./images/ser-line1.jpg" alt="">
+                <p>HDL小包</p>
+              </a>
+            </div>
+            <div class="sc-line-box">
+              <a class="clearfix" href="#">
+                <img src="./images/ser-line2.jpg" alt="">
+                <p>Post小包</p>
+              </a>
+            </div>
+            <div class="sc-line-box">
+              <a class="clearfix" href="#">
+                <img src="./images/ser-line3.jpg" alt="">
+                <p>Express小包</p>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="sc-op">
+          <div class="sc-subhead clearfix">
+            <img src="./images/sub-car.jpg" alt="">
+            <span>|</span>
+            <p>操作流程</p>
+          </div>
+          <div class="sc-op-content">
+            <img src="./images/sc-op.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer></footer>
+
+
+  <script>
+    $(function() {
+      // 服务导航下拉
+      $('.sn-box.on .sn-box-ul').stop().slideDown();
+      $('.sn-box-head').click(function () {
+        var box = $(this).parent();
+        $('.sn-box').removeClass('on');
+        box.addClass('on');
+
+        $('.sn-box-ul').stop().slideUp();
+        $('.sn-box.on .sn-box-ul').stop().slideDown();
+      })
+
+    })
+  </script>
+  
+</body>
+</html>

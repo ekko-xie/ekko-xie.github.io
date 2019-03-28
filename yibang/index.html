@@ -16,6 +16,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/lightbox.js"></script>
 	<script src="js/jquery.SuperSlide.2.1.js"></script>
+	<script src="js/number-add.js"></script>
 	<script src="js/basic.js"></script>
 
 
@@ -29,123 +30,7 @@
 
 
 	<!-- 头部 -->
-	<header>
-		<div class="header-content">
-			<div class="wrap clearfix">
-				<div class="logo clearfix">
-					<a href="index.html">
-						<img class="logo-img" width="80" height="80" src="images/logo.png" alt="">
-					</a>
-				</div>
-
-
-				<!-- 导航 -->
-				<div class="nav-container">
-					<ul class="nav-ul">
-				
-						<li class="nav-list on">
-							<a class="nav-a" href="index.html"><span>首页</span></a>
-						</li>
-						<li class="nav-list">
-							<a class="nav-a" href="about.html"><span>产品与服务</span></a>
-							<div class="nav-dropdown nav-dropdown1">
-								<div class="yb-menu">
-									<div class="wrap">
-										<div class="yb-list clearfix">
-											<div class="yb-list-title clearfix">
-												<div class="ybl-title-icon">
-													<img width="40" height="40" src="./images/yb1.png" alt="">
-												</div>
-												<div class="ybl-title-p">
-													<h4>UWL Freight</h4>
-													<p>干线服务</p>
-												</div>
-											</div>
-											<div class="yb-list-nav clearfix">
-												<a href="#">空运服务</a>
-												<a href="#">海运服务</a>
-											</div>
-										</div>
-										<div class="yb-list clearfix">
-											<div class="yb-list-title clearfix">
-												<div class="ybl-title-icon">
-													<img width="40" height="40" src="./images/yb2.png" alt="">
-												</div>
-												<div class="ybl-title-p">
-													<h4>UWL Post</h4>
-													<p>邮政服务</p>
-												</div>
-											</div>
-											<div class="yb-list-nav clearfix">
-												<a href="#">中国邮政专线</a>
-												<a href="#">外邮专线</a>
-											</div>
-										</div>
-										<div class="yb-list clearfix">
-											<div class="yb-list-title clearfix">
-												<div class="ybl-title-icon">
-													<img width="40" height="40" src="./images/yb3.png" alt="">
-												</div>
-												<div class="ybl-title-p">
-													<h4>UWL Express</h4>
-													<p>专线服务</p>
-												</div>
-											</div>
-											<div class="yb-list-nav clearfix">
-												<a href="#">虚拟海外仓服务</a>
-												<a href="#">出口小包专线服务</a>
-												<a href="#">出口小包快递服务</a>
-											</div>
-										</div>
-										<div class="yb-list clearfix">
-											<div class="yb-list-title clearfix">
-												<div class="ybl-title-icon">
-													<img width="40" height="40" src="./images/yb4.png" alt="">
-												</div>
-												<div class="ybl-title-p">
-													<h4>UWL DDP</h4>
-													<p>到门服务</p>
-												</div>
-											</div>
-											<div class="yb-list-nav clearfix">
-												<a href="#">出口FBA</a>
-												<a href="#">超大件DDP</a>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="nav-list">
-							<a class="nav-a" href="#"><span>轨迹追踪</span></a>
-						</li>
-						<li class="nav-list">
-							<a class="nav-a" href="#"><span>任务中心</span></a>
-						</li>
-						<li class="nav-list">
-							<a class="nav-a" href="#"><span>新闻资讯</span></a>
-						</li>
-						<li class="nav-list">
-							<a class="nav-a" href="#"><span>关于我们</span></a>
-						</li>
-						<li class="nav-list">
-							<a class="nav-a" href="#"><span>在线下单</span></a>
-						</li>
-
-					</ul>
-				
-				</div>
-
-				<div class="header-phone">
-					<p>服务热线</p>
-					<h4>4008-486-568</h4>
-				</div>
-			</div>
-		</div>
-
-
-	</header>
+	<header></header>
 
 
 	<div class="index-banner">
@@ -189,7 +74,7 @@
 	<div class="index-info">
 		<div class="wrap clearfix">
 			<div class="index-info-notice">
-				<p><a href="#">2018年中秋节/国庆节放假通知及操作安排</a></p>
+				<p><a href="news-detail.html">2018年中秋节/国庆节放假通知及操作安排</a></p>
 			</div>
 			<div class="index-info-item clearfix">
 				<div class="ii-item-box">
@@ -225,7 +110,7 @@
 			<div class="iw-content clearfix">
 				<div class="iw-box clearfix">
 					<img src="./images/iway1.png" alt="">
-					<span>219</span>
+					<span class="timer count-title" data-to="219" data-speed="1000"></span>
 					<p>直达国家</p>
 				</div>
 				<div class="gang">
@@ -233,7 +118,7 @@
 				</div>
 				<div class="iw-box clearfix">
 					<img src="./images/iway2.png" alt="">
-					<span>20</span>
+					<span class="timer count-title" data-to="20" data-speed="1000"></span>
 					<p>分拨中心</p>
 				</div>
 				<div class="gang">
@@ -241,7 +126,7 @@
 				</div>
 				<div class="iw-box clearfix">
 					<img src="./images/iway3.png" alt="">
-					<span>12</span>
+					<span class="timer count-title" data-to="12" data-speed="1000"></span>
 					<p>产品服务</p>
 				</div>
 				<div class="gang">
@@ -249,7 +134,7 @@
 				</div>
 				<div class="iw-box clearfix">
 					<img src="./images/iway4.png" alt="">
-					<span>4</span>
+					<span class="timer count-title" data-to="4" data-speed="1000"></span>
 					<p>运输方式</p>
 				</div>
 			</div>
@@ -259,37 +144,370 @@
 
 	<div class="index-service">
 		<div class="wrap">
-			<div class="index-title">
+			<div class="index-title anim anim1">
 				<h3>SERVICES AND PRODUCTS</h3>
 				<p>服务与产品</p>
 			</div>
-			<div class="is-content clearfix">
-				<div class="is-box is-box1">
+			<div class="is-content clearfix anim anim2">
+				<div class="is-box is-box1 on">
 					<div class="is-box-title">
 						<div class="ibt-icon"></div>
 						<h4>UWL FREIGHT</h4>
 						<p>干线服务</p>
 					</div>
+					<div class="is-box-p">
+						<a href="service.html">空运服务</a>
+						<a href="service.html">海运服务</a>
+					</div>
+				</div>
 
+				<div class="is-box is-box2">
+					<div class="is-box-title">
+						<div class="ibt-icon"></div>
+						<h4>UWL POST</h4>
+						<p>邮政服务</p>
+					</div>
+					<div class="is-box-p">
+						<a href="service.html">中国邮政专线</a>
+						<a href="service.html">外邮专线</a>
+					</div>
+				</div>
+
+				<div class="is-box is-box3">
+					<div class="is-box-title">
+						<div class="ibt-icon"></div>
+						<h4>UWL EXPRESS</h4>
+						<p>专线服务</p>
+					</div>
+					<div class="is-box-p">
+						<a href="service.html">虚拟海外仓服务</a>
+						<a href="service.html">出口小包专线服务</a>
+						<a href="service.html">出口小包快递服务</a>
+					</div>
+				</div>
+
+				<div class="is-box is-box4">
+					<div class="is-box-title">
+						<div class="ibt-icon"></div>
+						<h4>UWL EXPRESS</h4>
+						<p>到门服务</p>
+					</div>
+					<div class="is-box-p">
+						<a href="service.html">出口FBA</a>
+						<a href="service.html">超大件DDP到门服务</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="index-product">
+		<div class="wrap">
+			<div class="index-title anim anim1">
+				<h3>STRONG PUSH PRODUCTS</h3>
+				<p>强推产品</p>
+			</div>
+			<div class="index-product-content clearfix anim anim2">
+				<div class="ipc-box ipc-box1">
+					<a href="#">
+						<div class="ipc-box-icon"></div>
+						<p>LAX／LHR空运服务</p>
+					</a>
+				</div>
+				<div class="ipc-box ipc-box2">
+					<a href="#">
+						<div class="ipc-box-icon"></div>
+						<p>美国FBA服务</p>
+					</a>
+				</div>
+				<div class="ipc-box ipc-box3">
+					<a href="#">
+						<div class="ipc-box-icon"></div>
+						<p>美国超大件DDP上门服务</p>
+					</a>
+				</div>
+				<div class="ipc-box ipc-box4">
+					<a href="#">
+						<div class="ipc-box-icon"></div>
+						<p>欧洲FBA服务</p>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="index-solution">
+		<div class="wrap">
+			<div class="index-title anim anim1">
+				<h3>SOLUTIIONS AND CASES</h3>
+				<p>解决方案与案例</p>
+			</div>
+			<div class="iso-navbar anim anim1">
+				<span>解决方案</span>
+				<span>案例</span>
+			</div>
+
+			<div class="iso-content clearfix anim anim2">
+				<!-- 解决方案 -->
+				<div class="iso-list clearfix">
+					<div class="iso-box">
+						<a href="solution.html">
+							<div class="iso-box-img">
+								<img width="400" height="584" src="./images/iso-img1.jpg" alt="">
+							</div>
+							<div class="iso-box-p">
+								<div class="iso-box-frame"></div>
+								<div class="isop-img">
+									<img src="./images/iso1.png" alt="">
+								</div>
+								<div class="isop-line"></div>
+								<div class="isop-title">进口综合平台</div>
+								<div class="isop-p">
+									<p>不断完善服务与产品，接入各大超级跨境电商综合平台，实现更深入、更全面、更系</p>
+									<div class="isop-more">查看更多</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="iso-box">
+						<a href="solution.html">
+							<div class="iso-box-img">
+								<img width="400" height="584" src="./images/iso-img2.jpg" alt="">
+							</div>
+							<div class="iso-box-p">
+								<div class="iso-box-frame"></div>
+								<div class="isop-img">
+									<img src="./images/iso2.png" alt="">
+								</div>
+								<div class="isop-line"></div>
+								<div class="isop-title">进口独立平台</div>
+								<div class="isop-p">
+									<p>不断完善服务与产品，接入各大超级跨境电商综合平台，实现更深入、更全面、更系</p>
+									<div class="isop-more">查看更多</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="iso-box">
+						<a href="solution.html">
+							<div class="iso-box-img">
+								<img width="400" height="584" src="./images/iso-img3.jpg" alt="">
+							</div>
+							<div class="iso-box-p">
+								<div class="iso-box-frame"></div>
+								<div class="isop-img">
+									<img src="./images/iso3.png" alt="">
+								</div>
+								<div class="isop-line"></div>
+								<div class="isop-title">出口综合平台</div>
+								<div class="isop-p">
+									<p>不断完善服务与产品，接入各大超级跨境电商综合平台，实现更深入、更全面、更系</p>
+									<div class="isop-more">查看更多</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- 案例 -->
+				<div class="iso-list clearfix">
+					<div class="iso-box">
+						<a href="solution-case.html">
+							<div class="iso-box-img">
+								<img width="400" height="584" src="./images/iso-img4.jpg" alt="">
+							</div>
+							<div class="iso-box-p">
+								<div class="iso-box-frame"></div>
+								<div class="isop-img">
+									<img src="./images/iso1.png" alt="">
+								</div>
+								<div class="isop-line"></div>
+								<div class="isop-title">进口综合平台</div>
+								<div class="isop-p">
+									<p>不断完善服务与产品，接入各大超级跨境电商综合平台，实现更深入、更全面、更系</p>
+									<div class="isop-more">查看更多</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				
+					<div class="iso-box">
+						<a href="solution-case.html">
+							<div class="iso-box-img">
+								<img width="400" height="584" src="./images/iso-img5.jpg" alt="">
+							</div>
+							<div class="iso-box-p">
+								<div class="iso-box-frame"></div>
+								<div class="isop-img">
+									<img src="./images/iso2.png" alt="">
+								</div>
+								<div class="isop-line"></div>
+								<div class="isop-title">进口独立平台</div>
+								<div class="isop-p">
+									<p>不断完善服务与产品，接入各大超级跨境电商综合平台，实现更深入、更全面、更系</p>
+									<div class="isop-more">查看更多</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				
+					<div class="iso-box">
+						<a href="solution-case.html">
+							<div class="iso-box-img">
+								<img width="400" height="584" src="./images/iso-img6.jpg" alt="">
+							</div>
+							<div class="iso-box-p">
+								<div class="iso-box-frame"></div>
+								<div class="isop-img">
+									<img src="./images/iso3.png" alt="">
+								</div>
+								<div class="isop-line"></div>
+								<div class="isop-title">出口综合平台</div>
+								<div class="isop-p">
+									<p>不断完善服务与产品，接入各大超级跨境电商综合平台，实现更深入、更全面、更系</p>
+									<div class="isop-more">查看更多</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="index-news">
+		<div class="wrap">
+			<div class="index-title anim anim1">
+				<h3>NEWS AND INFORMATION</h3>
+				<p>解决方案与案例</p>
+			</div>
+			<div class="in-content clearfix anim anim2">
+				<div class="in-big">
+					<a href="news-detail.html">
+						<div class="in-big-img">
+							<img width="586" height="302" src="./images/in-big.jpg" alt="">
+						</div>
+						<div class="in-big-p">
+							<div class="in-bp-date">2019-03-01</div>
+							<div class="in-bp-title">进博会京东公布报告：进口消费人群多男性</div>
+							<div class="in-bp-more">查看详情</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="in-list">
+					<div class="in-list-box">
+						<a href="news-detail.html">
+							<div class="in-lb-date">2019-03-01</div>
+							<div class="in-lb-p">EBAY：德国站点活跃用户数超1700万</div>
+						</a>
+					</div>
+					<div class="in-list-box">
+						<a href="news-detail.html">
+							<div class="in-lb-date">2019-03-01</div>
+							<div class="in-lb-p">京东全球购更名海囤全球 主打原产地直购</div>
+						</a>
+					</div>
+					<div class="in-list-box">
+						<a href="news-detail.html">
+							<div class="in-lb-date">2019-03-01</div>
+							<div class="in-lb-p">网易Q3净收入168.55亿元 同比增长35.1%</div>
+						</a>
+					</div>
+					<div class="in-list-box">
+						<a href="news-detail.html">
+							<div class="in-lb-date">2019-03-01</div>
+							<div class="in-lb-p">进博会京东公布报告：进口消费人群多男性</div>
+						</a>
+					</div>
+					<div class="in-list-box">
+						<a href="news-detail.html">
+							<div class="in-lb-date">2019-03-01</div>
+							<div class="in-lb-p">中国成最大进口电商消费国 90后成最大群体</div>
+						</a>
+					</div>
+					<div class="in-list-box">
+						<a href="news-detail.html">
+							<div class="in-lb-date">2019-03-01</div>
+							<div class="in-lb-p">亚马逊要求美国加州卖家提供税号</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="index-know anim anim1">
+		<div class="wrap">
+			<h4>很感兴趣，想进一步了解</h4>
+			<a href="#">了解更多</a>
+		</div>
+	</div>
 
 
-
+	<!-- 底部 -->
+	<footer></footer>
 
 
 	<script>
 		$(function () {
-			// 导航下拉
-			$('.nav-list').mouseenter(function () {
-				$('.nav-dropdown').hide();
-				$(this).find('.nav-dropdown').stop().slideDown();
-			}).mouseleave(function () {
-				$('.nav-dropdown').hide();
+
+			//滚动监控添加动画
+			var anim = $(".anim");//触发遍历所用的类
+			setTimeout(function () {
+				$(window).scroll(function () {
+					roll();
+				});
+				$(window).resize(function () {
+					roll();
+				});
+				roll();
+			}, 6);
+			function roll() {
+				var oHeight = $(window).height();
+				var ScrVal = $(window).scrollTop();
+				anim.each(function (i) {
+					if (ScrVal + oHeight > anim.eq(i).offset().top - 50) {
+						anim.eq(i).addClass("anim-show");
+					}
+				})
+			}
+			
+
+			// 数字滚动效果，滚动到某部分才执行
+			var mark = true; // 通过变量，使JS只加载一次
+			function numScroll() {
+				var d = 180;
+				var h = $(window).height();
+				var topH = $(document).scrollTop();
+
+				var adv_h1 = $('.iw-box').offset().top;
+				//console.log( h + topH - adv_h1  ); // 元素距离可视窗口底部的距离
+
+				if (h + topH - adv_h1 > d && mark) {
+					$.getScript("js/number-add.js", function () {
+						mark = false;
+						//console.log(mark);
+					});
+				}
+				//console.log(mark);
+			}
+			//执行滚动监控
+			numScroll();
+			$(window).scroll(function () {
+				numScroll();
 			});
+
+			// 服务切换
+			$('.is-box').mouseenter(function() {
+				$('.is-box').removeClass('on');
+				$(this).addClass('on');
+			})
 
 
 			// 首页banner
@@ -312,10 +530,19 @@
 					nextEl: '.index-banner .swiper-button-next',
 					prevEl: '.index-banner .swiper-button-prev',
 				},
+			})
+
+			// 解决方案切换
+			// 默认展示第一个
+			$('.iso-navbar span').eq(0).addClass('on');
+			$('.iso-content .iso-list').eq(0).show()
+			$('.iso-navbar span').click(function() {
+				var index = $(this).index();
+				$('.iso-navbar span').removeClass('on');
+				$(this).addClass('on');
+				$('.iso-list').hide();
+				$('.iso-content .iso-list').eq(index).show()
 			})      
-
-	
-
 
 		});
 

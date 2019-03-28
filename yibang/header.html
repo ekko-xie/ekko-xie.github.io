@@ -1,0 +1,128 @@
+
+<!-- 头部 -->
+<div class="header-content">
+  <div class="wrap clearfix">
+    <div class="logo clearfix">
+      <a href="index.html">
+        <img class="logo-img" width="80" height="80" src="images/logo.png" alt="">
+      </a>
+    </div>
+
+
+    <!-- 导航 -->
+    <div class="nav-container">
+      <ul class="nav-ul">
+
+        <li class="nav-list on">
+          <a class="nav-a" href="index.html"><span>首页</span></a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-a" href="service.html"><span>产品与服务</span></a>
+          <div class="nav-dropdown nav-dropdown1">
+            <div class="yb-menu">
+              <div class="wrap">
+                <div class="yb-list clearfix">
+                  <div class="yb-list-title clearfix">
+                    <div class="ybl-title-icon">
+                      <img width="40" height="40" src="./images/yb1.png" alt="">
+                    </div>
+                    <div class="ybl-title-p">
+                      <h4>UWL Freight</h4>
+                      <p>干线服务</p>
+                    </div>
+                  </div>
+                  <div class="yb-list-nav clearfix">
+                    <a href="service.html">空运服务</a>
+                    <a href="service.html">海运服务</a>
+                  </div>
+                </div>
+                <div class="yb-list clearfix">
+                  <div class="yb-list-title clearfix">
+                    <div class="ybl-title-icon">
+                      <img width="40" height="40" src="./images/yb2.png" alt="">
+                    </div>
+                    <div class="ybl-title-p">
+                      <h4>UWL Post</h4>
+                      <p>邮政服务</p>
+                    </div>
+                  </div>
+                  <div class="yb-list-nav clearfix">
+                    <a href="service.html">中国邮政专线</a>
+                    <a href="service.html">外邮专线</a>
+                  </div>
+                </div>
+                <div class="yb-list clearfix">
+                  <div class="yb-list-title clearfix">
+                    <div class="ybl-title-icon">
+                      <img width="40" height="40" src="./images/yb3.png" alt="">
+                    </div>
+                    <div class="ybl-title-p">
+                      <h4>UWL Express</h4>
+                      <p>专线服务</p>
+                    </div>
+                  </div>
+                  <div class="yb-list-nav clearfix">
+                    <a href="service.html">虚拟海外仓服务</a>
+                    <a href="service.html">出口小包专线服务</a>
+                    <a href="service.html">出口小包快递服务</a>
+                  </div>
+                </div>
+                <div class="yb-list clearfix">
+                  <div class="yb-list-title clearfix">
+                    <div class="ybl-title-icon">
+                      <img width="40" height="40" src="./images/yb4.png" alt="">
+                    </div>
+                    <div class="ybl-title-p">
+                      <h4>UWL DDP</h4>
+                      <p>到门服务</p>
+                    </div>
+                  </div>
+                  <div class="yb-list-nav clearfix">
+                    <a href="service.html">出口FBA</a>
+                    <a href="service.html">超大件DDP</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-list">
+          <a class="nav-a" href="#"><span>轨迹追踪</span></a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-a" href="solution-case.html"><span>任务中心</span></a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-a" href="news.html"><span>新闻资讯</span></a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-a" href="about.html"><span>关于我们</span></a>
+        </li>
+        <li class="nav-list">
+          <a class="nav-a" href="#"><span>在线下单</span></a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="header-phone">
+      <p>服务热线</p>
+      <h4>4008-486-568</h4>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(function() {
+    // 导航下拉
+    $('.nav-list').mouseenter(function () {
+      $('.nav-dropdown').hide();
+      $(this).find('.nav-dropdown').stop().slideDown();
+    }).mouseleave(function () {
+      $('.nav-dropdown').hide();
+    });
+  })
+</script>
