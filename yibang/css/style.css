@@ -237,9 +237,11 @@ html{
 .ii-item-box{
     float: left;
     margin-left: 12px;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 .ii-item-box:hover{
+    -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
 }
 .ii-item-box a{
@@ -316,6 +318,7 @@ html{
     height: 370px;
     border: 1px solid #e0e6eb;
     background: #fff;
+    -webkit-transition: width 0.3s;
     transition: width 0.3s;
 }
 .is-box.on{
@@ -508,6 +511,7 @@ html{
     height: 100%;
     background: rgba(0,0,0,0.6);
     text-align: center;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .iso-box:hover .iso-box-p{
@@ -526,15 +530,18 @@ html{
     height: 80px;
     width: 80px;
     margin: 160px auto 0;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .iso-box:hover .isop-img{
     margin: 100px auto 0;
 }
 .iso-box-img img{
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .iso-box:hover .iso-box-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .isop-line{
@@ -550,10 +557,13 @@ html{
     margin-top: 40px;
 }
 .isop-p{
+    position: relative;
     opacity: 0;
     width: 290px;
     margin: 66px auto 0;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 10;
 }
 .iso-box:hover .isop-p{
     opacity: 1;
@@ -575,6 +585,16 @@ html{
     border: 1px solid #fff;
     border-radius: 6px;
     margin: 10px auto 0;
+    font-size: 12px;
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.isop-more:hover{
+    opacity: 1;
+    font-size: 16px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .index-news{
     padding-bottom: 80px;
@@ -590,9 +610,11 @@ html{
     overflow: hidden;
 }
 .in-big-img img{
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .in-big:hover .in-big-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .in-big-p{
@@ -675,6 +697,11 @@ html{
     background: #053a88;
     border-radius: 14px;
     letter-spacing: 4px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.index-know a:hover{
+    background: #2b87D1;
 }
 
 .footer-content{
@@ -834,6 +861,7 @@ html{
     font-size: 18px;
     color: #fff;
     line-height: 90px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .im-box:hover .im-box-dark, .im-box.on .im-box-dark{
@@ -1034,9 +1062,11 @@ html{
     overflow: hidden;
 }
 .avo-box-img img{
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .avo-box:hover .avo-box-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 .avo-box-p{
@@ -1071,6 +1101,7 @@ html{
     color: #333;
     margin: 0 6px;
     background: #e1e4e8;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .page a.page-prev{
