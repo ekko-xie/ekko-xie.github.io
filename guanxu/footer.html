@@ -1,0 +1,143 @@
+<div class="footer-content">
+  <div class="wrap">
+    <!-- PC底部导航 -->
+    <div class="footer-nav">
+
+      <div class="footer-nav-content clearfix">
+        <div class="fn-box">
+          <h4>产品&服务</h4>
+          <p><a href="#">智能耳机</a></p>
+          <p><a href="#">智能音箱</a></p>
+          <p><a href="#">虚拟现实/增强现实</a></p>
+        </div>
+        <div class="fn-box">
+          <h4>新闻中心</h4>
+          <p><a href="#">公司动态</a></p>
+          <p><a href="#">媒体报道</a></p>
+          <p><a href="#">行业关注</a></p>
+        </div>
+        <div class="fn-box">
+          <h4>关于我们</h4>
+          <p><a href="#">公司简介</a></p>
+          <p><a href="#">公司文化</a></p>
+          <p><a href="#">资质荣誉</a></p>
+        </div>
+        <div class="fn-box">
+          <h4>社会责任</h4>
+          <p><a href="#">可持续发展</a></p>
+          <p><a href="#">社会回馈</a></p>
+          <p><a href="#">社区活动</a></p>
+        </div>
+        <div class="fn-box">
+          <h4>加入我们</h4>
+          <p><a href="#">人在冠旭</a></p>
+          <p><a href="#">员工福利</a></p>
+          <p><a href="#">招贤纳士</a></p>
+        </div>
+        <div class="fn-box">
+          <h4>联系我们</h4>
+          <p><a href="#">联系方式</a></p>
+          <p><a href="#">留言</a></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 手机版底部导航 -->
+    <div class="footer-nav-phone">
+      <div class="fnp-list">
+        <div class="fnp-list-title">产品&服务<i>+</i></div>
+        <div class="fnp-list-a">
+          <p><a href="#">智能耳机</a></p>
+          <p><a href="#">智能音箱</a></p>
+          <p><a href="#">虚拟现实/增强现实</a></p>
+        </div>
+      </div>
+      <div class="fnp-list">
+        <div class="fnp-list-title">新闻中心<i>+</i></div>
+        <div class="fnp-list-a">
+          <p><a href="#">公司动态</a></p>
+          <p><a href="#">媒体报道</a></p>
+          <p><a href="#">行业关注</a></p>
+        </div>
+      </div>
+      <div class="fnp-list">
+        <div class="fnp-list-title">关于我们<i>+</i></div>
+        <div class="fnp-list-a">
+          <p><a href="#">公司简介</a></p>
+          <p><a href="#">公司文化</a></p>
+          <p><a href="#">荣誉资质</a></p>
+        </div>
+      </div>
+      <div class="fnp-list">
+        <div class="fnp-list-title">社会责任<i>+</i></div>
+        <div class="fnp-list-a">
+          <p><a href="#">可持续发展</a></p>
+          <p><a href="#">社会回馈</a></p>
+          <p><a href="#">社区活动</a></p>
+        </div>
+      </div>
+      <div class="fnp-list">
+        <div class="fnp-list-title">加入我们<i>+</i></div>
+        <div class="fnp-list-a">
+          <p><a href="#">人在冠旭</a></p>
+          <p><a href="#">员工福利</a></p>
+          <p><a href="#">招贤纳士</a></p>
+        </div>
+      </div>
+      <div class="fnp-list">
+        <div class="fnp-list-title">联系我们<i>+</i></div>
+        <div class="fnp-list-a">
+          <p><a href="#">联系方式</a></p>
+          <p><a href="#">在线留言</a></p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-copyright">
+      <div class="fcopy-top clearfix">
+        <div class="fcopy-top-p">Copyright © 2019 Apple Inc. 保留所有权利。</div>
+        <div class="fcopy-top-nav clearfix">
+          <a href="#">隐私政策</a>
+          <span>/</span>
+          <a href="#">使用条款</a>
+          <span>/</span>
+          <a href="#">销售政策</a>
+          <span>/</span>
+          <a href="#">法律信息</a>
+          <span>/</span>
+          <a href="#">网站地图</a>
+        </div>
+      </div>
+      <div class="fcopy-bottom">京公安网安备11010502008968 京ICP备10214630 营业执照</div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  $(function() {
+    // 手机底部导航下拉
+    $('.fnp-list-title').click(function () {
+      var list = $(this).parent();
+
+      if (list.hasClass('on')) {
+        $('.fnp-list').removeClass('on');
+        $('.fnp-list-a').stop().slideUp();
+        $('.fnp-list-title i').html('+');
+      } else {
+        $('.fnp-list').removeClass('on');
+        $('.fnp-list-a').stop().slideUp();
+        list.find('.fnp-list-title i').html('-');
+        list.addClass('on');
+        list.find('.fnp-list-a').stop().slideDown();
+      }
+    });
+  })
+</script>

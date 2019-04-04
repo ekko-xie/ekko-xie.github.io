@@ -1,0 +1,82 @@
+
+
+/*仅用于PC效果*/
+@media screen and (min-width: 1220px) {
+   
+
+}
+
+
+/*适配平板*/
+@media screen and (min-width: 761px) and (max-width: 1219px){
+  .wrap{width: 92%;}
+  .phone-hc{display: block;}
+  .pc-nav{display: none;}
+
+  .inner-banner{height: 230px;}
+
+  .breadcrumb{float: none;}
+  .inner-nav-a{float: none;}
+  .product-box-p h4{font-size: 30px;}
+  .product-box-p p{font-size: 16px;line-height: 24px;margin-top: 10px;}
+
+
+
+}
+
+/*适配平板竖屏*/
+@media screen and (min-width: 761px) and (max-width: 1000px){
+  /* .index-banner .swiper-container{height: 400px;} */
+
+}
+
+
+/*适配手机*/
+@media screen and (max-width: 760px){
+  .wrap{width: 92%;}
+  .phone-hc{display: block;}
+  .footer-nav{display: none;}
+  .pc-nav{display: none;}
+  .footer-nav-phone{display: block;}
+  .footer-copyright{border-top: none;margin-top: 10px;}
+  .fcopy-bottom{margin-top: 6px;}
+
+
+  .header-top{height: 74px;}
+  .logo{width: 150px;}
+  .header-lang a{font-size: 14px;margin-top: 27px;}
+  .header-lang span{margin: 27px 6px 0;}
+  .phone-hc{margin-top: 12px;margin-left: 16px;}
+  .phone-menu{top: 74px;}
+  .fcopy-top-p{float: none;}
+  .fcopy-top-nav{float: none;margin-left: 0;margin-top: 5px;}
+  .fcopy-top-nav span{margin: 0 3px;}
+
+  .inner-banner{height: 110px;}
+  .index-banner .swiper-button-next{width: 30px;height: 30px;right: 16px;}
+  .index-banner .swiper-button-prev{width: 30px;height: 30px;left: 16px;}
+
+  .breadcrumb{float: none;}
+  .breadcrumb a{line-height: 50px;font-size: 12px;}
+  .breadcrumb span{line-height: 50px;font-size: 12px;margin: 0 6px;}
+  .inner-nav-a{float: none;}
+  .inner-nav-a a{line-height: 50px;margin-right: 20px;}
+  .product{padding-top: 40px;}
+  .pt-box{margin: 0 10px;padding-bottom: 10px;}
+  .pt-box-icon{width: 30px;}
+  .pt-box-span{font-size: 16px;margin-top: 7px;margin-left: 5px;}
+  .product-content{padding-top: 30px;}
+  .product-box-p{width: 100%;}
+  .product-box-p h4{font-size: 16px;line-height: 24px;}
+  .product-box-p p{font-size: 12px;line-height: 20px;margin-top: 5px;}
+  .product-more{font-size: 12px;}
+
+
+
+
+}
+
+
+
+
+
