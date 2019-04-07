@@ -13,12 +13,15 @@
   .phone-hc{display: block;}
   .pc-nav{display: none;}
 
-  .inner-banner{height: 230px;}
+  /* .inner-banner{height: 230px;} */
+  .inner-banner-p{width: 92%;margin-left: -46%;}
 
   .breadcrumb{float: none;}
   .inner-nav-a{float: none;}
   .product-box-p h4{font-size: 30px;}
   .product-box-p p{font-size: 16px;line-height: 24px;margin-top: 10px;}
+
+  .join-list-icon{width: 90px;}
 
 
 
@@ -52,7 +55,8 @@
   .fcopy-top-nav{float: none;margin-left: 0;margin-top: 5px;}
   .fcopy-top-nav span{margin: 0 3px;}
 
-  .inner-banner{height: 110px;}
+  .inner-banner{height: 160px;}
+  .inner-banner-p{width: 92%;margin-left: -46%;font-size: 24px;top: 72px;}
   .index-banner .swiper-button-next{width: 30px;height: 30px;right: 16px;}
   .index-banner .swiper-button-prev{width: 30px;height: 30px;left: 16px;}
 
@@ -70,6 +74,49 @@
   .product-box-p h4{font-size: 16px;line-height: 24px;}
   .product-box-p p{font-size: 12px;line-height: 20px;margin-top: 5px;}
   .product-more{font-size: 12px;}
+
+  .news{padding-top: 10px;}
+  .news-content{padding-bottom: 30px;}
+  .news-list-date{float: none;font-size: 12px;}
+  .news-list-p{float: none;width: 100%;font-size: 14px;}
+  .page a{padding: 10px 12px;}
+  .news-list{border-bottom: 1px dashed #ccc;margin-top: 15px;padding-bottom: 15px;}
+
+  .news-detail{padding-top: 46px;}
+  .nd-np-a a{padding: 10px 12px;font-size: 12px;}
+  .nd-np-back{padding: 10px 10px 10px 30px;font-size: 12px;background: url('../images/back.png') no-repeat 10px center;background-size: 14px;}
+  .nd-np-back:hover{color: #fff;background: url('../images/back.png') no-repeat 10px center;background-size: 14px;}
+
+  .about-c{width: 100%;float: none;}
+  .about-img{width: 100%;float: none;}
+
+  .about-honor{padding-top: 10px;}
+  .ah-c{float: none;width: 100%;}
+  .ah-img{float: none;width: 100%;}
+
+  .join{padding: 40px 0;}
+  .join-list-title{width: 24%;}
+  .join-list-title p{font-size: 14px;}
+  .join-list-icon{width: 60px;}
+  .join-list-p{width: 42%;}
+  .join-list-p p{font-size: 12px;line-height: 20px;}
+  .join-p{font-size: 16px;}
+  .join-list{line-height: 140px;height: 140px;}
+
+  .join-welfare{padding: 40px 0;}
+  .jw-list{padding: 30px 0;}
+  .jw-list h4{font-size: 16px;line-height: 26px;}
+  .jw-list p{font-size: 12px;line-height: 22px;margin-top: 10px;}
+
+  .join-recruit{padding: 10px 0;}
+  .aj-title.bold p{font-size: 12px;}
+  .aj-title p{font-size: 12px;}
+
+  .contact{padding: 30px 0;}
+  .contact-way{float: none;width: 100%;font-size: 14px;line-height: 20px;}
+  .contact-map{width: 100%;float: none;margin-top: 20px;}
+
+
 
 
 
