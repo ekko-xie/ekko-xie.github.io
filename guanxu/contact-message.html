@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=0">
+  <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="author" content="">
+  <title>冠旭</title>
+  <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/css-reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/swiper-3.3.1.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.js"></script>
+  <script src="js/basic.js"></script>
+
+
+  <!--[if lt IE 9]><script src="js/html5.js" ></script><![endif]-->
+  <!--[if lt IE 9]><script src="js/selectivizr-min.js" ></script><![endif]-->
+
+  <style>
+    /* pc内页banner */
+    @media screen and (min-width: 1220px) {
+      .inner-banner {
+        background: url('./images/contact-banner.jpg') no-repeat center center / cover;
+      }
+    }
+
+    /* 平板内页banner */
+    @media screen and (min-width: 761px) and (max-width: 1219px) {
+      .inner-banner {
+        background: url('./images/contact-banner.jpg') no-repeat center center / cover;
+      }
+    }
+
+    /* 手机内页banner */
+    @media screen and (max-width: 760px) {
+      .inner-banner {
+        background: url('./images/contact-banner.jpg') no-repeat center center / cover;
+      }
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <!-- 头部 -->
+  <header></header>
+  
+  <div class="inner-banner-container">
+    <p class="inner-banner-p">联系我们</p>
+    <div class="inner-banner scale"></div>
+  </div>
+  
+  <div class="inner-nav">
+    <div class="wrap clearfix">
+      <div class="breadcrumb clearfix">
+        <a href="#">首页</a>
+        <span>&gt;</span>
+        <a href="#">联系我们</a>
+        <span>&gt;</span>
+        <a class="on" href="#">联系方式</a>
+      </div>
+      <div class="inner-nav-a clearfix">
+        <a href="contact.html">联系方式</a>
+        <a class="on" href="contact-message.html">在线留言</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-message">
+    <div class="wrap">
+      <form action="">
+        <div class="cm-list clearfix">
+          <div class="cm-box">
+            <input class="cm-input1" type="text" placeholder="姓名*">
+          </div>
+          <div class="cm-box">
+            <input class="cm-input1" type="text" placeholder="联系电话*">
+          </div>
+          <div class="cm-box">
+            <input class="cm-input1" type="text" placeholder="联系地址">
+          </div>
+          <div class="cm-box">
+            <input class="cm-input1" type="text" placeholder="公司名称">
+          </div>
+          <div class="cm-box">
+            <input class="cm-input1" type="text" placeholder="邮箱*">
+          </div>
+          <div class="cm-box clearfix">
+            <div class="cm-verf">
+              <img src="./images/verf.jpg" alt="">
+            </div>
+            <input class="cm-input1" type="text" placeholder="验证码*">
+          </div>
+        </div>
+        <textarea class="cm-textarea" placeholder="详情描述*"></textarea>
+        <div class="cm-box2">
+          <input class="cms-btn cm-submit" type="submit" value="提交">
+          <input class="cms-btn cm-reset" type="reset" value="重置">
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <footer></footer>
+
+
+
+  
+</body>
+</html>

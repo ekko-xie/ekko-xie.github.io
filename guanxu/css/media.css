@@ -2,6 +2,35 @@
 
 /*仅用于PC效果*/
 @media screen and (min-width: 1220px) {
+
+  .inner-nav-a a:hover{
+      border-bottom: 2px solid #000;
+      color: #000;
+  }
+  .pt-box:hover{
+      border-bottom: 1px solid #000;
+  }
+  .pt-box:hover .pt-box-span{
+      color: #000;
+  }
+  .page a:hover{
+      color: #fff;
+      background: #000;
+  }
+  .nd-np-a a:hover{
+      color: #fff;
+      background: #000;
+  }
+  .nd-np-back:hover{
+      color: #fff;
+      background: #000 url('../images/back-on.png') no-repeat 18px center;
+  }
+
+  .ss-more:hover{color: #fff;background: #000;}
+  .ss-list:hover .ss-list-img img{
+      transform: scale(1.1);
+  }
+
    
 
 }
@@ -22,6 +51,10 @@
   .product-box-p p{font-size: 16px;line-height: 24px;margin-top: 10px;}
 
   .join-list-icon{width: 90px;}
+  .sdev-box-left img{width: 60px;}
+  .sdev-box-left p{margin-top: 16px;font-size: 14px;line-height: 24px;}
+
+  .ss-list-text p{height: 130px;}
 
 
 
@@ -116,8 +149,32 @@
   .contact-way{float: none;width: 100%;font-size: 14px;line-height: 20px;}
   .contact-map{width: 100%;float: none;margin-top: 20px;}
 
+  .contact-message{padding-top: 16px;}
+  .cm-box{width: 100%;margin-left: 0;}
+  .cm-list .cm-box:nth-child(2n+1){margin-left: 0;}
+  .cm-input1{font-size: 14px;height: 50px;padding: 0 4%;}
+  .cm-verf{height: 50px;width: 108px;}
+  .cm-textarea{font-size: 14px;height: 100px;padding: 6px 4%;}
+  .cms-btn{width: 90px;height: 36px;font-size: 14px;margin-right: 14px;}
+
+  .sitemap-list{float: none;width: 100%;padding-right: 0;}
+  .sitemap{padding-top: 1px;}
+  .sitemap-box{margin-top: 30px;}
+  .sitemap-list-a p{margin-top: 10px;}
 
 
+  .about-culture{padding-top: 20px;}
+  .sdev-box-right{float: none;width: 100%;}
+  .sdev-box-c{position: relative;top: 0;left: 0;width: 100%;transform: none;margin-top: 20px;padding-bottom: 30px;}
+  .sdev-box-left img{width: 60px;}
+  .sdev-box-left p{font-size: 14px;line-height: 24px;padding: 0 20px;margin-top: 20px;}
+
+  .ss-list{margin-top: 30px;}
+  .ss-list-img{float: none;width: 100%;}
+  .ss-list-text{float: none;width: 100%;margin-top: 20px;}
+  .ss-list-text h3{font-size: 16px;}
+  .ss-list-text p{font-size: 12px;line-height: 20px;height: auto;margin-top: 14px;}
+  .ss-more{font-size: 12px;line-height: 40px;margin-top: 16px;width: 110px;}
 
 
 

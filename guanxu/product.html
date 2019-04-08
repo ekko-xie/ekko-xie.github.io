@@ -23,13 +23,39 @@
   <!--[if lt IE 9]><script src="js/html5.js" ></script><![endif]-->
   <!--[if lt IE 9]><script src="js/selectivizr-min.js" ></script><![endif]-->
 
+  <style>
+    /* pc内页banner */
+    @media screen and (min-width: 1220px) {
+      .inner-banner {
+        background: url('./images/product-banner.jpg') no-repeat center center / cover;
+      }
+    }
+  
+    /* 平板内页banner */
+    @media screen and (min-width: 761px) and (max-width: 1219px) {
+      .inner-banner {
+        background: url('./images/product-banner.jpg') no-repeat center center / cover;
+      }
+    }
+  
+    /* 手机内页banner */
+    @media screen and (max-width: 760px) {
+      .inner-banner {
+        background: url('./images/product-banner.jpg') no-repeat center center / cover;
+      }
+    }
+  </style>
+
 
 </head>
 <body>
   <!-- 头部 -->
   <header></header>
 
-  <div class="inner-banner" style="background: url('./images/product-banner.jpg') no-repeat center center / cover;"></div>
+  <div class="inner-banner-container">
+    <p class="inner-banner-p">智能耳机</p>
+    <div class="inner-banner scale"></div>
+  </div>
 
   <div class="inner-nav">
     <div class="wrap clearfix">
