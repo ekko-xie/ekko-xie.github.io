@@ -955,7 +955,8 @@ body{
 
 .legal{
     background: #fff;
-    padding: 40px 0;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 .legal .nd-title h2{
     font-size: 30px;
@@ -964,7 +965,7 @@ body{
 
 .sitemap{
     background: #fff;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 80px;
 }
 .sitemap-list{
