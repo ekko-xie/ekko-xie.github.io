@@ -69,7 +69,17 @@ body{
 }
 
 .pc-nav{
+    position: absolute;
+    top: 101px;
+    left: 0;
+    width: 100%;
+    background: #fff;
     border-bottom: 1px solid #e8e8e8;
+    z-index: 999;
+}
+.pc-nav.scroll{
+    position: fixed;
+    top: 0;
 }
 .nav-container{
     /* float: left; */
@@ -86,8 +96,10 @@ body{
     display: block;
     line-height: 64px;
     height: 64px;
-    padding: 0 40px;
+    padding: 0 20px;
+    min-width: 160px;
     font-size: 16px;
+    text-align: center;
     color: #000;
 }
 .nav-list:hover .nav-a,.nav-list.on .nav-a{
@@ -106,11 +118,12 @@ body{
 }
 
 .nav-dropdown2{
-    width: 200px;
+    width: 160px;
+    /* width: 144px; */
     left: 50%;
-    margin-left: -100px;
+    margin-left: -80px;
     border-top: none;
-    padding: 20px 0;
+    /* padding-top: 10px; */
 }
 .nd-container{
     width: 1000px;
@@ -140,13 +153,14 @@ body{
 }
 .nd2-menu{
     text-align: center;
-    padding: 0 20px;
+    padding: 10px 20px 30px;
 }
 .nd2-menu a{
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
     display: inline-block;
-    line-height: 40px;
+    line-height: 20px;
+    margin-top: 16px;
 }
 .nd2-menu a:hover{
     color: #e60012;
@@ -237,9 +251,11 @@ body{
     margin: 0 10px;
 }
 
+.index-banner{
+    margin-top: 64px;
+}
 .index-banner .swiper-container {
     width: 100%;
-    /* height: 766px; */
 }
 .index-banner .swiper-slide{
     width: 100%;
@@ -376,13 +392,14 @@ body{
 .inner-banner-container{
     position: relative;
     overflow: hidden;
+    margin-top: 64px;
 }
 .inner-banner{
     height: 400px;
 }
 .inner-banner-p{
     position: absolute;
-    top: 180px;
+    top: 175px;
     left: 50%;
     margin-left: -600px;
     width: 1200px;
@@ -497,7 +514,8 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .product-box-p h4{
     font-size: 48px;
@@ -625,9 +643,11 @@ body{
 
 @keyframes scaleAnim{
     0%{         
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
     100%{
+        -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
 }
@@ -681,9 +701,11 @@ body{
 }
 .ah-img-box img{
     width: 100%;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 .ah-img-box:hover img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -990,6 +1012,7 @@ body{
     top: 50%;
     left: 0;
     width: 50%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 .sdev-box-left img{
@@ -1009,9 +1032,11 @@ body{
     overflow: hidden;
 }
 .sdevr-img img{
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .sdev-box:hover .sdevr-img img{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -1051,6 +1076,7 @@ body{
 }
 .ss-list-img img{
     width: 100%;
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .ss-more{
@@ -1060,5 +1086,6 @@ body{
     font-size: 15px;
     border: 1px solid #000;
     margin-top: 34px;
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }

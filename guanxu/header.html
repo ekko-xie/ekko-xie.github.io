@@ -167,5 +167,15 @@
       e.stopPropagation();
     });
 
+
+    $(window).scroll(function() {
+      console.log(document.documentElement.scrollTop)
+      if (document.documentElement.scrollTop > 101) {
+        $('.pc-nav').addClass('scroll');
+      } else {
+        $('.pc-nav').removeClass('scroll');
+      }
+    })
+
   })
 </script>
